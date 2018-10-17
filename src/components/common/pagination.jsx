@@ -14,7 +14,7 @@ const Pagination = props => {
   if (numberOfPages === 1) return null;
 
   return (
-    <nav aria-label="Page navigation example">
+    <nav aria-label="Page navigation example">  
       <ul className="pagination">
         {pages.map(p => (
           <li
