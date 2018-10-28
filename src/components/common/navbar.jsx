@@ -10,8 +10,8 @@ class NavBar extends Component {
           Vidly
         </Link>
         <div className="navbar-nav">
-          <NavLink className="nav-item nav-link active" to="/movies">
-            Movies <span className="sr-only">(current)</span>
+          <NavLink className="nav-item nav-link" to="/movies">
+            Movies
           </NavLink>
           <NavLink className="nav-item nav-link" to="/customers">
             Customers

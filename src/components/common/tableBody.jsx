@@ -19,15 +19,9 @@ class TableBody extends Component {
       <tbody>
         {data.map(item => (
           <tr key={item._id}>
-            {columns.map((column, index) => (
+            {columns.map(column => (
               <td key={this.createKey(item, column)}>
-                {index === 0 ? (
-                  <Link to={`/movies/${item._id}`}>
-                    {this.renderCell(item, column)}
-                  </Link>
-                ) : (
-                  this.renderCell(item, column)
-                )}
+                {this.renderCell(item, column)}
               </td>
             ))}
           </tr>
